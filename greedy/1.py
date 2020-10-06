@@ -8,4 +8,5 @@ def solution(n, lost, reserve):
         elif i+1 in setlost:
             setlost.remove(i+1)
     answer = n - len(setlost)
-    return answer
+    return answer 
+    
