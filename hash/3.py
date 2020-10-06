@@ -24,6 +24,6 @@ def solution(clothes):
     cnt = Counter([kind for name, kind in clothes])
     answer = reduce(lambda x, y: x*(y+1), cnt.values(), 1) - 1
     return answer
-굳이 위에 방법처럼 해쉬로 만들지 않고 counter를 이용하여 구하는 방식인 이 방법이 더 낮다고 생각한다 
+굳이 위에 방법처럼 숫자를 더하지 말고  counter를 이용하여 구하는 방식인 이 방법이 더 낮다고 생각한다 
 위 문제를 풀 당시에는 생각하지 못했던 방법
 '''
