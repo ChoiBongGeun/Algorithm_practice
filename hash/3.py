@@ -3,7 +3,6 @@ def solution(clothes):
     setc={}
     #부위별 옷이 몇개 있는지 숫자를 세어서 넣어 준다 
     for i in clothes:
-        value = i[0]
         key = i[1]
         if key in setc:
             setc[key] +=1
