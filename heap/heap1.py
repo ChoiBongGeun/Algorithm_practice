@@ -24,7 +24,7 @@ def solution(scoville, K):
     answer = 0
     heapq.heapify(scoville) #scoville를 heapq로 바꾸어주었다
     while True:
-        if scoville[0] > = K:#첫번째가 가장 작은수인데 그것이 k보다 크면 while문을 나오게 했다
+        if scoville[0] >= K: #첫번째가 가장 작은수인데 그것이 k보다 크면 while문을 나오게 했다
             break
         elif len(scoville) <= 1 and scoville[0] < K: #만약 더이상 더할게 없는데 k보다 크지 않는다면 -1이 출력되게 하였다 
             answer = -1
