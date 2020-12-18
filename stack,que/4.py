@@ -19,7 +19,13 @@ def solution(priorities, location):
         if priorities == printlist:
             break
         #아까 sort해준 거와 priorites가 같아질 경우 정렬이 끝난것이므로 while문 빠져나옵니다
-
+    
+    print(priorities, index1,printlist)
     answer = index1.index(location)+1
     #인덱스에 저장되어있는 location위치를 찾아서 빼줍니다 0부터 시작하기 때문에 1더해서 출력
     return answer
+
+priorities= [2, 1, 3, 2]	
+location= 2
+
+print(solution(priorities,location))
