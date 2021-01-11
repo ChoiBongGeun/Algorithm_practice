@@ -6,7 +6,6 @@ def knapsack1(capacity, n):
                 array[i][s] = array[i - 1][s] 
             else: # 물건의 부피가 s보다 작거나 같으면 
                 array[i][s] = max(value[i-1] + array[i-1][s-size[i-1]], array[i-1][s]) 
-            
     return array[n][capacity] 
 
 size = [9, 3, 4, 7, 8] 
